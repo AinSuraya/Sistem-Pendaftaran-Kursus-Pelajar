@@ -15,7 +15,7 @@
   <section class="parent">
     <section class="child">
     <form action="login.php" method="post">
-        <h1>LOG Masuk</h1>
+        <h1>LOG MASUK</h1>
         <table border="0">
           <tr>
             <th>Nama Pengguna</th>
@@ -27,7 +27,7 @@
           </tr>
           <tr>
             <td colspan="2" align="center">
-            <button type="submit">LOG MASUK</button>
+            <button type="submit">Log Masuk</button>
             </td>
           </tr>
         </table>

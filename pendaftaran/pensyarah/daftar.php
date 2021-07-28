@@ -3,7 +3,7 @@
 <form action="" method="post">
     <table>
         <tr>
-            <td>Username</td>
+            <td>Nama Pengguna</td>
             <td><input type="text" name="username"></td>
         </tr>
         <tr>
@@ -16,7 +16,7 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-            <button type="submit">SUBMIT</button>
+            <button type="submit">HANTAR</button>
             </td>
         </tr>
     </table>

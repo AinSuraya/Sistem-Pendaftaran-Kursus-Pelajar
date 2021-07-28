@@ -16,7 +16,7 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-            <button type="submit">SUBMIT</button>
+            <button type="submit">HANTAR</button>
             </td>
         </tr>
     </table>

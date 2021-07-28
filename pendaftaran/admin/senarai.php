@@ -3,7 +3,7 @@
 <table border="0">
     <tr>
         <th>Bil</th>
-        <th>Username</th>
+        <th>Nama Pengguna</th>
         <th>Nama Pensyarah</th>
         <th>Jabatan</th>
         <th>Kelas</th>
