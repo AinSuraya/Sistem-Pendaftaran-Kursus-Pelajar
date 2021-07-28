@@ -17,11 +17,16 @@ $row = $conn->query($sql)->fetch_object();
 <h2><ul>
     <li><a href="index.php?daftar=senarai">Pelajar</a></li>
     <li><a href="index.php?daftar=daftar">Daftar Pelajar</a></li>
+    <li><a href="index.php?daftar=kursus">Senarai Kursus</a></li>
     <li><a href="index.php?daftar=katalaluan">Kata Laluan</a></li>
     <li><a href="../logout.php">Log Keluar</a></li>
 </ul></h2>
+
 <font><b>Pensyarah :</b></font>
 <font><?php echo $row->namapensyarah;?></font><br>
+<font><b>Kelas :</b></font>
+<font><?php echo $row->kelas;?></font><br>
+
 <center><div>
     <?php
     $daftar = 'senarai';

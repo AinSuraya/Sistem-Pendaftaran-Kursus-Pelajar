@@ -1,23 +1,54 @@
 <h1>Daftar Kursus</h1>
 
-<form action="" method="post">
-    <table>
+<center>
+	<form method="post" action=""> 
+		<table border="0">
         <tr>
-            <td>Kod Kursus</td>
-            <td><input type="text" name="kodkursus"></td>
-        </tr>
+			<th>Kursus</th>
+            <th>Jam Kredit</th>
+		</tr>
         <tr>
-            <td>Nama Kursus</td>
-            <td><input type="text" name="namakursus"></td>
-        </tr>
-        <tr>
-            <td>Jam Kredit</td>
-            <td><input type="text" name="jamkredit"></td>
-        </tr>
+			<td>
+                <input type="checkbox" name="network">
+                <label for="network">DFN5023-NETWORK DESIGN</label><br>
+                <input type="checkbox" name="switching">
+                <label for="switching">DFN4043-SWITCHING & ROUTING ESSENTIALS</label><br>
+                <input type="checkbox" name="project">
+                <label for="project">DFT6014-INTEGRATED PROJECT</label><br>
+                <input type="checkbox" name="secure">
+                <label for="secure">DFP6033-SECURE MOBILE COMPUTING</label><br>
+                <input type="checkbox" name="mobile">
+                <label for="mobile">DFP5013-MOBILE APPLICATION DEVELOPMENT</label><br>
+                <input type="checkbox" name="wan">
+                <label for="wan">DFN6023-CONNECTION WAN</label><br>
+                <input type="checkbox" name="advanced">
+                <label for="advanced">DFN6014-ADVANCED ROUTING</label><br>
+                <input type="checkbox" name="web">
+                <label for="web">DFP4063-WEB PROGRAMMING</label><br>
+                <input type="checkbox" name="osos">
+                <label for="osos">DFN6033-OPEN SOURCE SERVER ADMINISTRATION</label><br>
+                <input type="checkbox" name="adv">
+                <label for="adv">DFW5013-ADVANCED WEB DEVELOPMENT</label><br>
+			</td>
+            <th>
+                <font>3.0</font>
+                <br><font>3.0</font>
+                <br><font>4.0</font>
+                <br><font>3.0</font>
+                <br><font>3.0</font>
+                <br><font>3.0</font>
+                <br><font>4.0</font>
+                <br><font>3.0</font>
+                <br><font>3.0</font>
+                <br><font>3.0</font>
+            </th>
+		</tr>
+		<tr>
         <tr>
             <td colspan="2" align="center">
-            <button type="submit">HANTAR</button>
+                <button type="submit">HANTAR</button>
             </td>
-        </tr>
-    </table>
+		</tr>
+</table>
 </form>
+</center>

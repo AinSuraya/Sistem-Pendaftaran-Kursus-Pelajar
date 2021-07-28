@@ -15,12 +15,15 @@ $row = $conn->query($sql)->fetch_object();
 </head>
 <body>
 <h2><ul>
+    <li><a href="index.php?daftar=kursus">Senarai Kursus</a></li>
     <li><a href="index.php?daftar=daftar">Daftar Kursus</a></li>
     <li><a href="index.php?daftar=katalaluan">Kata Laluan</a></li>
     <li><a href="../logout.php">Log Keluar</a></li>
 </ul></h2>
 <font><b>Pelajar :</b></font>
 <font><?php echo $row->namapelajar;?></font><br>
+<font><b>No Pendaftaran :</b></font>
+<font><?php echo $row->nomatrik;?></font><br>
 <center><div>
     <?php
     $daftar = 'daftar';

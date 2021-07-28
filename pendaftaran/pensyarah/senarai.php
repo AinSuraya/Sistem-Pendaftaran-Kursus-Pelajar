@@ -21,11 +21,11 @@
             <td><?php echo $row->namapelajar; ?></td>
             <td><?php echo $row->nomatrik; ?></td>
             <td>
-                <a href="reset.php?idpelajar=<?php echo $row->idpelajar; ?>">Reset</a>
+                <a href="">Reset</a>
                 |
                 <a href="index.php?daftar=edit&idpelajar=<?php echo $row->idpelajar; ?>">Edit</a>
                 |
-                <a href="padam.php?idpelajar=<?php echo $row->idpelajar; ?>">Padam</a>
+                <a href="">Padam</a>
             </td>
         </tr>
         <?php

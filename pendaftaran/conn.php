@@ -5,10 +5,10 @@ ini_set('display_errors', 'On');
 session_start();
 
 $server = 'localhost';
-$username = 'root';
+$usrnm = 'root';
 $password = '';
 $dbname = 'pendaftaran';
-$conn = new mysqli($server, $username, $password, $dbname);
+$conn = new mysqli($server, $usrnm, $password, $dbname);
 
 function x($string)
 {

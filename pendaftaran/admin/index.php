@@ -18,7 +18,9 @@ if (!isset($_SESSION['admin'])) {
 <body>
 <h2><ul>
     <li><a href="index.php?daftar=senarai">Pensyarah</a></li>
-    <li><a href="index.php?daftar=kursus">Senarai Kursus</a></li>
+    <li><a href="index.php?daftar=pelajar">Senarai Pelajar</a></li>
+    <li><a href="index.php?daftar=kursus">Kursus Pelajar</a></li>
+    <li><a href="index.php?daftar=senaraikursus">Senarai Kursus</a></li>
     <li><a href="index.php?daftar=katalaluan">Kata Laluan</a></li>
     <li><a href="../logout.php">Log Keluar</a></li>
 </ul></h2>

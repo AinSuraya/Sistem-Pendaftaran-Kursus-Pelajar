@@ -15,7 +15,7 @@ if ($username == 'admin') {
     } else {
         ?>
         <script>
-            alert('Sorry1, invalid username/password!');
+            alert('Maaf1, nama pengguna / kata laluan tidak sah!');
             window.location = './';
         </script>
         <?php
@@ -37,7 +37,7 @@ if ($username == 'admin') {
         } else {
             ?>
             <script>
-                alert('Sorry2, invalid username/password!');
+                alert('Maaf2, nama pengguna / kata laluan tidak sah!');
                 window.location = './';
             </script>
             <?php
@@ -59,7 +59,7 @@ if ($username == 'admin') {
             } else {
                 ?>
                 <script>
-                    alert('Sorry3, invalid username/password!');
+                    alert('Maaf3, nama pengguna / kata laluan tidak sah!');
                     window.location = './';
                 </script>
                 <?php
@@ -67,7 +67,7 @@ if ($username == 'admin') {
         } else {
             ?>
             <script>
-                alert('Sorry4, invalid username/password!');
+                alert('Maaf4, nama pengguna / kata laluan tidak sah!');
                 window.location = './';
             </script>
             <?php

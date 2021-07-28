@@ -17,7 +17,7 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-            <button type="submit">HANTAR</button>
+            <button type="submit">SIMPAN</button>
             </td>
         </tr>
     </table>
