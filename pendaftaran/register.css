@@ -1,0 +1,60 @@
+body{
+    font-family: 'Lato', sans-serif;
+	background-image: url('color.jpg');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+form{
+    border-style: solid;
+    width: 80%;
+    padding: 10px 15px;
+    margin: 8px 0;
+}
+input[type=number],input[type=text], input[type=password] {
+    width: 90%;
+	padding: 5px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+button {
+	background-color: #4CAF50;
+	font-size: 16px;
+	color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+	border-radius: 15px;
+}
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#333;
+}
+li {
+	float: left;
+}
+li a {
+	display:block;
+	color:white;
+	text-align:center;
+	padding:14px 16px; /* 14pxpx:top&bottom 16px:right&left*/
+	text-decoration: none;/*remove underline*/
+	font-family:Arial;
+	font-weight:normal;
+}
+li a:hover{
+	background-color:pink;
+	color:black;
+}
+.child {
+	float: center;
+	width: 50%;
+}
