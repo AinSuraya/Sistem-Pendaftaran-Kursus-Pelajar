@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
-    <title>Login</title>
+    <title>Log Masuk</title>
 </head>
 <body>
 <center>
@@ -15,19 +15,19 @@
   <section class="parent">
     <section class="child">
     <form action="login.php" method="post">
-        <h1>LOGIN</h1>
+        <h1>LOG Masuk</h1>
         <table border="0">
           <tr>
-            <th>Username</th>
+            <th>Nama Pengguna</th>
             <td><input type="text" name="username" required></td>
           </tr>
           <tr>
-            <th>Password</th>
+            <th>Kata Laluan</th>
             <td><input type="password" name="password" required></td>
           </tr>
           <tr>
             <td colspan="2" align="center">
-            <button type="submit">LOGIN</button>
+            <button type="submit">LOG MASUK</button>
             </td>
           </tr>
         </table>
