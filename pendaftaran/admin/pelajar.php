@@ -6,11 +6,11 @@
         <th>PENASIHAT AKADEMIK</th>
     </tr>
     <tr>
-        <td><a href="">DDT5A</a></td>
+        <td><a href="index.php?daftar=senaraipelajar1">DDT5A</a></td>
         <td>Mime Azrina Binti Jaafar</td>
     </tr>
     <tr>
-        <td><a href="">DDT5B</a></td>
+        <td><a href="index.php?daftar=senaraipelajar1">DDT5B</a></td>
         <td>Norul Huda Binti Abdul Razak</td>
     </tr>
 </table>
