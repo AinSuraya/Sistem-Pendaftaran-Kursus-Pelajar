@@ -15,7 +15,7 @@
         <td>
             <a href="">Reset</a>
             |
-            <a href="">Edit</a>
+            <a href="index.php?daftar=edit">Edit</a>
             |
             <a href="">Padam</a>
         </td>
@@ -27,7 +27,7 @@
         <td>
             <a href="">Reset</a>
             |
-            <a href="">Edit</a>
+            <a href="index.php?daftar=edit">Edit</a>
             |
             <a href="">Padam</a>
         </td>
@@ -39,7 +39,7 @@
         <td>
             <a href="">Reset</a>
             |
-            <a href="">Edit</a>
+            <a href="index.php?daftar=edit">Edit</a>
             |
             <a href="">Padam</a>
         </td>
@@ -51,7 +51,7 @@
         <td>
             <a href="">Reset</a>
             |
-            <a href="">Edit</a>
+            <a href="index.php?daftar=edit">Edit</a>
             |
             <a href="">Padam</a>
         </td>
@@ -63,7 +63,7 @@
         <td>
             <a href="">Reset</a>
             |
-            <a href="">Edit</a>
+            <a href="index.php?daftar=edit">Edit</a>
             |
             <a href="">Padam</a>
         </td>
@@ -75,7 +75,7 @@
         <td>
             <a href="">Reset</a>
             |
-            <a href="">Edit</a>
+            <a href="index.php?daftar=edit">Edit</a>
             |
             <a href="">Padam</a>
         </td>
@@ -87,7 +87,7 @@
         <td>
             <a href="">Reset</a>
             |
-            <a href="">Edit</a>
+            <a href="index.php?daftar=edit">Edit</a>
             |
             <a href="">Padam</a>
         </td>

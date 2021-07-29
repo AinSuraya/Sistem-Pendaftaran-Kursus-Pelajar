@@ -21,7 +21,7 @@
             <td><?php echo $row->namakursus; ?></td>
             <td><?php echo $row->jamkredit; ?></td>
             <td>
-                <a href="">Edit</a>
+                <a href="index.php?daftar=editkursus">Edit</a>
                 |
                 <a href="">Padam</a>
             </td>
