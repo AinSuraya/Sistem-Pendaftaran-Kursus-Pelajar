@@ -1,6 +1,6 @@
 <h1>Senarai Kursus Yang Telah Didaftar</h1>
-
-<table border="0">
+AIN SURAYA BINTI MOHD RUZUKI <br>
+<br><table border="0">
     <tr>
         <th>Bil</th>
         <th>Kod Kursus</th>

@@ -1,12 +1,11 @@
 <h1>Senarai Pelajar Yang Telah Daftar</h1>
-
-<table border="0">
+MOBILE APPLICATION DEVELOPMENT<br>
+<br><table border="0">
     <tr>
         <th>Bil</th>
         <th>Kelas</th>
         <th>No Pendaftaran</th>
         <th>Nama Pelajar</th>
-        
         <th>Pensyarah</th>
         <th>Jabatan</th>
     </tr>
