@@ -4,9 +4,9 @@
     <tr>
         <th>Bil</th>
         <th>Nama Pengguna</th>
+        <th>Kelas</th>
         <th>Nama Pensyarah</th>
         <th>Jabatan</th>
-        <th>Kelas</th>
         <th>Tindakan</th>
     </tr>
     <?php
@@ -19,9 +19,9 @@
         <tr>
             <td><?php echo $bil++; ?></td>
             <td><?php echo $row->username; ?></td>
+            <td><?php echo $row->kelas; ?></td>
             <td><?php echo $row->namapensyarah; ?></td>
             <td><?php echo $row->jabatan; ?></td>
-            <td><?php echo $row->kelas; ?></td>
             <td>
                 <a href="">Reset</a>
                 |

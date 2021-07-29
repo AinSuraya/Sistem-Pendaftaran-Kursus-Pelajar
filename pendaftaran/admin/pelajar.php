@@ -3,7 +3,7 @@
 <table border="0">
     <tr>
         <th>KELAS</th>
-        <th>PENASIHAT AKADEMIK</th>
+        <th>PENSYARAH</th>
     </tr>
     <tr>
         <td><a href="index.php?daftar=senaraipelajar1">DDT5A</a></td>
