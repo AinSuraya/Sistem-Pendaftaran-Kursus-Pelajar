@@ -7,7 +7,7 @@ body{
 }
 form{
     border-style: solid;
-    width: 80%;
+    width: 40%;
     padding: 10px 15px;
     margin: 8px 0;
 }
@@ -47,6 +47,7 @@ li a {
 	text-align:center;
 	padding:14px 16px; /* 14pxpx:top&bottom 16px:right&left*/
 	text-decoration: none;/*remove underline*/
+	font: 10px;
 	font-family:Arial;
 	font-weight:normal;
 }

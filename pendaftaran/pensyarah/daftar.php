@@ -1,4 +1,4 @@
-<h1>Daftar Pelajar Baharu</h1>
+<h1>Daftar Pelajar</h1>
 
 <form action="" method="post">
     <table>

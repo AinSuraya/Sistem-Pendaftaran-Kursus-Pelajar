@@ -14,12 +14,15 @@ $row = $conn->query($sql)->fetch_object();
     <title>Pelajar</title>
 </head>
 <body>
-<h2><ul>
+<marquee direction="right" height="70" width="100%" bgcolor="pink" loop="20">
+  <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR</font></center>
+</marquee>
+<ul>
     <li><a href="index.php?daftar=kursus">Senarai Kursus</a></li>
     <li><a href="index.php?daftar=daftar">Daftar Kursus</a></li>
     <li><a href="index.php?daftar=katalaluan">Kata Laluan</a></li>
     <li><a href="../logout.php">Log Keluar</a></li>
-</ul></h2>
+</ul>
 <font><b>Pelajar :</b></font>
 <font><?php echo $row->namapelajar;?></font><br>
 <font><b>No Pendaftaran :</b></font>

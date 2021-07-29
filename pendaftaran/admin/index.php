@@ -16,14 +16,19 @@ if (!isset($_SESSION['admin'])) {
     <title>Admin</title>
 </head>
 <body>
-<h2><ul>
+<marquee direction="right" height="70" width="100%" bgcolor="pink" loop="20">
+  <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR</font></center>
+</marquee>
+<ul>
     <li><a href="index.php?daftar=senarai">Pensyarah</a></li>
+    <li><a href="index.php?daftar=daftarpensyarah">Daftar Pensyarah</a></li>
     <li><a href="index.php?daftar=pelajar">Senarai Pelajar</a></li>
-    <li><a href="index.php?daftar=kursus">Kursus Pelajar</a></li>
+    <li><a href="index.php?daftar=kursus">Senarai Kursus Pelajar</a></li>
     <li><a href="index.php?daftar=senaraikursus">Senarai Kursus</a></li>
+    <li><a href="index.php?daftar=daftarkursus">Daftar Kursus</a></li>
     <li><a href="index.php?daftar=katalaluan">Kata Laluan</a></li>
     <li><a href="../logout.php">Log Keluar</a></li>
-</ul></h2>
+</ul>
 
 <font><b>Admin</b></font><br>
 <center><div>

@@ -1,4 +1,4 @@
-<h1>Senarai Kursus</h1>
+<h1>Senarai Pelajar Mengikut Kursus</h1>
 
 <table border="0">
     <tr>
@@ -17,10 +17,11 @@
         <tr>
             <td><?php echo $bil++; ?></td>
             <td><?php echo $row->kodkursus; ?></td>
-            <td><?php echo $row->namakursus; ?></td>
+            <td><a href=""><?php echo $row->namakursus; ?></a></td>
             <td><?php echo $row->jamkredit; ?></td>
         </tr>
         <?php
     }
     ?>
 </table>
+-- Sila klik nama kursus untuk melihat senarai pelajar yang mendaftar--

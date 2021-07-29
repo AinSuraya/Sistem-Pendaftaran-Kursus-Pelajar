@@ -1,27 +1,17 @@
-<h1>Senarai Pelajar</h1>
+<h1>Senarai Pelajar Mengikut Kelas</h1>
 
 <table border="0">
     <tr>
-        <th>Bil</th>
-        <th>Nama Pengguna</th>
-        <th>Nama Pelajar</th>
-        <th>No Pendaftaran</th> 
+        <th>KELAS</th>
+        <th>PENASIHAT AKADEMIK</th>
     </tr>
-    <?php
-    # kena buat join antara table pelajar & pensyarah
-    $bil = 1;
-    $sql = "SELECT * FROM pelajar ORDER BY username";
-    $result = $conn->query($sql);
-    echo $conn->error;
-    while ($row = $result->fetch_object()) {
-        ?>
-        <tr>
-            <td><?php echo $bil++; ?></td>
-            <td><?php echo $row->username; ?></td>
-            <td><?php echo $row->namapelajar; ?></td>
-            <td><?php echo $row->nomatrik; ?></td>
-        </tr>
-        <?php
-    }
-    ?>
+    <tr>
+        <td><a href="">DDT5A</a></td>
+        <td>Mime Azrina Binti Jaafar</td>
+    </tr>
+    <tr>
+        <td><a href="">DDT5B</a></td>
+        <td>Norul Huda Binti Abdul Razak</td>
+    </tr>
 </table>
+-- Sila klik nama kelas untuk melihat senarai pelajar--
