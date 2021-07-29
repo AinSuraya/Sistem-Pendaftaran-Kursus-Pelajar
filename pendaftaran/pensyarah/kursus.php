@@ -24,7 +24,4 @@
     }
     ?>
 </table>
--- Sila klik nama kursus untuk melihat senarai pelajar yang mendaftar--<br>
-<br>
-<p>Klik butang untuk mencetak halaman semasa</p>
-<button onclick="window.print()" class="button"><img src="print.png" width="100%" height="10%"></button>
+-- Sila klik nama kursus untuk melihat senarai pelajar yang mendaftar--

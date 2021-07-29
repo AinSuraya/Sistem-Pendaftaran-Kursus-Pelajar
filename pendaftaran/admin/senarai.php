@@ -25,7 +25,7 @@
             <td>
                 <a href="">Reset</a>
                 |
-                <a href="index.php?daftar=edit&idpensyarah=<?php echo $row->idpensyarah; ?>">Edit</a>
+                <a href="">Edit</a>
                 |
                 <a href="">Padam</a>
             </td>

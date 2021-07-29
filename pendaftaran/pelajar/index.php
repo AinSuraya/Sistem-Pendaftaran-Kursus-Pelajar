@@ -29,7 +29,7 @@ $row = $conn->query($sql)->fetch_object();
 <font><?php echo $row->nomatrik;?></font><br>
 <center><div>
     <?php
-    $daftar = 'daftar';
+    $daftar = 'kursus';
     if (isset($_GET['daftar'])) $daftar = $_GET['daftar'];
     require "$daftar.php";
     ?>

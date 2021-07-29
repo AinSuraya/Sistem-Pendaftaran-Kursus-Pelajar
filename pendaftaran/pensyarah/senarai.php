@@ -3,32 +3,92 @@
 <table border="0">
     <tr>
         <th>Bil</th>
-        <th>Nama Pengguna</th>
-        <th>Nama Pelajar</th>
         <th>No Pendaftaran</th>
+        <th>Nama Pelajar</th>
         <th>Tindakan</th>
     </tr>
-    <?php
-    $bil = 1;
-    $sql = "SELECT * FROM pelajar ORDER BY username";
-    $result = $conn->query($sql);
-    echo $conn->error;
-    while ($row = $result->fetch_object()) {
-        ?>
-        <tr>
-            <td><?php echo $bil++; ?></td>
-            <td><?php echo $row->username; ?></td>
-            <td><?php echo $row->namapelajar; ?></td>
-            <td><?php echo $row->nomatrik; ?></td>
-            <td>
-                <a href="">Reset</a>
-                |
-                <a href="index.php?daftar=edit&idpelajar=<?php echo $row->idpelajar; ?>">Edit</a>
-                |
-                <a href="">Padam</a>
-            </td>
-        </tr>
-        <?php
-    }
-    ?>
+    <tr>
+    <tr>
+        <td>1.</td>
+        <td>18DDT18F2004</td>
+        <td>Ain Suraya Binti Mohd Ruzuki</td>
+        <td>
+            <a href="">Reset</a>
+            |
+            <a href="">Edit</a>
+            |
+            <a href="">Padam</a>
+        </td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>18DDT18F2010</td>
+        <td>Nurul Emeyra Binti Bakari</td>
+        <td>
+            <a href="">Reset</a>
+            |
+            <a href="">Edit</a>
+            |
+            <a href="">Padam</a>
+        </td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>18DDT18F2014</td>
+        <td>Leo Melvin S/O Raju</td>
+        <td>
+            <a href="">Reset</a>
+            |
+            <a href="">Edit</a>
+            |
+            <a href="">Padam</a>
+        </td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>18DDT18F2023</td>
+        <td>Zaimie Nurazia Binti Zainol</td>
+        <td>
+            <a href="">Reset</a>
+            |
+            <a href="">Edit</a>
+            |
+            <a href="">Padam</a>
+        </td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>18DDT18F2016</td>
+        <td>Adli Sidqi Bin Azhar</td>
+        <td>
+            <a href="">Reset</a>
+            |
+            <a href="">Edit</a>
+            |
+            <a href="">Padam</a>
+        </td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td>18DDT18F2024</td>
+        <td>Nur Syafiqah Binti Saruji Affandi</td>
+        <td>
+            <a href="">Reset</a>
+            |
+            <a href="">Edit</a>
+            |
+            <a href="">Padam</a>
+        </td>
+    </tr>
+    <tr>
+        <td>7.</td>
+        <td>18DDT18F2008</td>
+        <td>Kamaleshwahrran A/L Naidu</td>
+        <td>
+            <a href="">Reset</a>
+            |
+            <a href="">Edit</a>
+            |
+            <a href="">Padam</a>
+        </td>
 </table>
