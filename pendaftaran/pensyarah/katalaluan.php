@@ -1,6 +1,6 @@
 <h1>Tukar Kata Laluan</h1>
 
-<form action="" method="post">
+<form action="katalaluan-tukar.php" method="post">
     <table>
         <tr>
             <td>Kata Laluan Asal</td>

@@ -23,11 +23,11 @@
             <td><?php echo $row->namapensyarah; ?></td>
             <td><?php echo $row->jabatan; ?></td>
             <td>
-                <a href="">Reset</a>
+                <a href="reset.php?idpensyarah=<?php echo $row->idpensyarah; ?>">Reset</a>
                 |
                 <a href="index.php?daftar=edit&idpensyarah=<?php echo $row->idpensyarah; ?>">Edit</a>
                 |
-                <a href="">Padam</a>
+                <a href="padam.php?idpensyarah=<?php echo $row->idpensyarah; ?>">Padam</a>
             </td>
         </tr>
         <?php

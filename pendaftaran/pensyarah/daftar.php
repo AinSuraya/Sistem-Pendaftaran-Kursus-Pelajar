@@ -1,6 +1,6 @@
 <h1>Daftar Pelajar</h1>
 
-<form action="" method="post">
+<form action="daftar-simpan.php" method="post">
     <table>
         <tr>
             <td>Nama Pengguna</td>

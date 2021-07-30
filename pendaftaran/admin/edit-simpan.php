@@ -1,7 +1,7 @@
 <?php
 require '../conn.php';
 
-$idcustomer = $_POST['idpensyarah'];
+$idpensyarah = $_POST['idpensyarah'];
 $namapensyarah = $_POST['namapensyah'];
 $jabatan = $_POST['jabatan'];
 $kelas = $_POST['kelas'];

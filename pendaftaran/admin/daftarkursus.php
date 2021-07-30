@@ -1,11 +1,7 @@
 <h1>Daftar Kursus</h1>
 
-<form action="" method="post">
+<form action="daftar-simpan-kursus.php" method="post">
     <table>
-        <tr>
-            <td>Nama Pengguna</td>
-            <td><input type="text" name="username"></td>
-        </tr>
         <tr>
             <td>Kod Kursus</td>
             <td><input type="text" name="kodkursus"></td>

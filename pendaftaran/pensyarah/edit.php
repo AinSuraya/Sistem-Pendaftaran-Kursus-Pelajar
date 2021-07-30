@@ -1,6 +1,17 @@
+<?php
+$idpelajar = $_GET['idpelajar'];
+$sql = "SELECT nomatrik, namapelajar, username, password FROM pelajar WHERE idpelajar = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param('i', $idpelajar);
+$stmt->execute();
+$stmt->store_result();
+$stmt->bind_result($nomatrik, $namapelajar, $username, $password);
+$stmt->fetch();
+$stmt->close();
+?>
 <h1>Edit Pelajar</h1>
 
-<form action="" method="post">
+<form action="edit-simpan.php" method="post">
     <input type="hidden" name="idpelajar" value="<?php echo $idpelajar; ?>">
     <table>
         <tr>
