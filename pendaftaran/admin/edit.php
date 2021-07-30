@@ -1,6 +1,17 @@
+<?php
+$idpensyarah = $_GET['idpensyarah'];
+$sql = "SELECT username, namapensyarah, jabatan, kelas, password FROM pensyarah WHERE idpensyarah = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param('i', $idpensyarah);
+$stmt->execute();
+$stmt->store_result();
+$stmt->bind_result($username, $namapensyarah, $jabatan, $kelas, $password);
+$stmt->fetch();
+$stmt->close();
+?>
 <h1>Edit Pensyarah</h1>
 
-<form action="" method="post">
+<form action="edit-simpan.php" method="post">
     <input type="hidden" name="idpensyarah" value="<?php echo $idpensyarah; ?>">
     <table>
         <tr>

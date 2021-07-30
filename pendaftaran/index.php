@@ -10,7 +10,7 @@
 <body>
 <center>
   <marquee direction="right" height="70" width="100%" bgcolor="pink" loop="20">
-  <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR</font></center>
+  <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR(PTSS)</font></center>
   </marquee>
   <section class="parent">
     <section class="child">

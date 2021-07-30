@@ -15,7 +15,7 @@ $row = $conn->query($sql)->fetch_object();
 </head>
 <body>
 <marquee direction="right" height="70" width="100%" bgcolor="pink" loop="20">
-  <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR</font></center>
+  <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR(PTSS)</font></center>
 </marquee>
 <ul>
     <li><a href="index.php?daftar=kursus">Senarai Kursus</a></li>
