@@ -9,7 +9,8 @@
     </tr>
     <?php
     $bil = 1;
-    $sql = "SELECT * FROM pelajar ORDER BY username";
+    $idpelajar = $_SESSION['idpensyarah'];
+    $sql = "SELECT * FROM pelajar WHERE idpensyarah = $idpelajar";
     $result = $conn->query($sql);
     echo $conn->error;
     while ($row = $result->fetch_object()) {

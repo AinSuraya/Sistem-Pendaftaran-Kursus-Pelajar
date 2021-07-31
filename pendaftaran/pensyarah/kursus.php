@@ -17,7 +17,7 @@
         <tr>
             <td><?php echo $bil++; ?></td>
             <td><?php echo $row->kodkursus; ?></td>
-            <td><a href="index.php?daftar=senaraipelajar"><?php echo $row->namakursus; ?></a></td>
+            <td><a href="index.php?daftar=senaraipelajar&idkursus=<?php echo $row->idkursus; ?>"><?php echo $row->namakursus; ?></a></td>
             <td><?php echo $row->jamkredit; ?></td>
         </tr>
         <?php

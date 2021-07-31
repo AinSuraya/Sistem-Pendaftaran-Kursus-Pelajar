@@ -1,6 +1,13 @@
+<?php
+    $idkursus = $_GET['idkursus'];
+    $sql = "SELECT * FROM kursus WHERE idkursus = $idkursus";
+    $row = $conn->query($sql)->fetch_object();
+?>
 <h1>Senarai Pelajar Yang Telah Daftar</h1>
-MOBILE APPLICATION DEVELOPMENT<br>
-<br><table border="0">
+
+<p><?php echo $row->namakursus;?></p><br>
+
+<table border="0">
     <tr>
         <th>Bil</th>
         <th>Kelas</th>
@@ -9,60 +16,24 @@ MOBILE APPLICATION DEVELOPMENT<br>
         <th>Pensyarah</th>
         <th>Jabatan</th>
     </tr>
-    <tr>
-        <td>1.</td>
-        <td>DDT5A</td>
-        <td>18DDT18F2004</td>
-        <td>Ain Suraya Binti Mohd Ruzuki</td>
-        <td>Mime Azrina Binti Jaafar</td>
-        <td>Jabatan Teknologi Maklumat & Komunikasi</td>
-    </tr>
-    <tr>
-        <td>2.</td>
-        <td>DDT5A</td>
-        <td>18DDT18F2014</td>
-        <td>Leo Melvin S/O Raju</td>
-        <td>Mime Azrina Binti Jaafar</td>
-        <td>Jabatan Teknologi Maklumat & Komunikasi</td>
-    </tr>
-    <tr>
-        <td>3.</td>
-        <td>DDT5A</td>
-        <td>18DDT18F2024</td>
-        <td>Nur Syafiqah Binti Saruji Affandi</td>
-        <td>Mime Azrina Binti Jaafar</td>
-        <td>Jabatan Teknologi Maklumat & Komunikasi</td>
-    </tr>
-    <tr>
-        <td>4.</td>
-        <td>DDT5B</td>
-        <td>18DDT18F2013</td>
-        <td>Nursyuhana Binti Abdul Rashid</td>
-        <td>Norul Huda Binti Abdul Razak</td>
-        <td>Jabatan Teknologi Maklumat & Komunikasi</td>
-    </tr>
-    <tr>
-        <td>5.</td>
-        <td>DDT5B</td>
-        <td>18DDT18F2029</td>
-        <td>Mohd Raihazarul Irman Bin Mohd Ramli</td>
-        <td>Norul Huda Binti Abdul Razak</td>
-        <td>Jabatan Teknologi Maklumat & Komunikasi</td>
-    </tr>
-    <tr>
-        <td>6.</td>
-        <td>DDT5B</td>
-        <td>18DDT18F2001</td>
-        <td>Ain' Nur Najwa Binti Zainol</td>
-        <td>Norul Huda Binti Abdul Razak</td>
-        <td>Jabatan Teknologi Maklumat & Komunikasi</td>
-    </tr>
-    <tr>
-        <td>7.</td>
-        <td>DDT5B</td>
-        <td>18DDT18F2038</td>
-        <td>Thurkeswary A/P Marimuthu</td>
-        <td>Norul Huda Binti Abdul Razak</td>
-        <td>Jabatan Teknologi Maklumat & Komunikasi</td>
-    </tr>
+    <?php
+    $bil = 1;
+    $sql = "SELECT * FROM pensyarah, pelajar, daftar, kursus 
+    WHERE pelajar.idpensyarah = pensyarah.idpensyarah
+    AND pelajar.idpelajar = daftar.idpelajar AND daftar.idkursus = kursus.idkursus";
+    $result = $conn->query($sql);
+    echo $conn->error;
+    while ($row = $result->fetch_object()) {
+        ?>
+        <tr>
+            <td><?php echo $bil++; ?></td>
+            <td><?php echo $row->kelas; ?></td>
+            <td><?php echo $row->nomatrik; ?></td>
+            <td><?php echo $row->namapelajar; ?></td>
+            <td><?php echo $row->namapensyarah; ?></td>
+            <td><?php echo $row->jabatan; ?></td>
+        </tr>
+        <?php
+    }
+    ?>
 </table>

@@ -1,24 +1,33 @@
+<?php
+    $idkursus = $_GET['idkursus'];
+    $sql = "SELECT * FROM kursus WHERE idkursus = $idkursus";
+    $row = $conn->query($sql)->fetch_object();
+?>
 <h1>Senarai Pelajar Yang Telah Daftar</h1>
-MOBILE APPLICATION DEVELOPMENT<br>
-<br><table border="0">
+
+<p><?php echo $row->namakursus;?></p><br>
+
+<table border="0">
     <tr>
         <th>Bil</th>
         <th>No Pendaftaran</th>
         <th>Nama Pelajar</th>
     </tr>
-    <tr>
-        <td>1.</td>
-        <td>18DDT18F2004</td>
-        <td>Ain Suraya Binti Mohd Ruzuki</td>
-    </tr>
-    <tr>
-        <td>2.</td>
-        <td>18DDT18F2014</td>
-        <td>Leo Melvin S/O Raju</td>
-    </tr>
-    <tr>
-        <td>3.</td>
-        <td>18DDT18F2024</td>
-        <td>Nur Syafiqah Binti Saruji Affandi</td>
-    </tr>
+    <?php
+    $bil = 1;
+    $sql = "SELECT * FROM pensyarah, pelajar, daftar, kursus 
+    WHERE pelajar.idpensyarah = pensyarah.idpensyarah
+    AND pelajar.idpelajar = daftar.idpelajar AND daftar.idkursus = kursus.idkursus";
+    $result = $conn->query($sql);
+    echo $conn->error;
+    while ($row = $result->fetch_object()) {
+        ?>
+        <tr>
+            <td><?php echo $bil++; ?></td>
+            <td><?php echo $row->nomatrik; ?></td>
+            <td><?php echo $row->namapelajar; ?></td>
+        </tr>
+        <?php
+    }
+    ?>
 </table>

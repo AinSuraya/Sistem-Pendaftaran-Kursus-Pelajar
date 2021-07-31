@@ -5,13 +5,18 @@
         <th>KELAS</th>
         <th>PENSYARAH</th>
     </tr>
-    <tr>
-        <td><a href="index.php?daftar=senaraipelajar1">DDT5A</a></td>
-        <td>Mime Azrina Binti Jaafar</td>
-    </tr>
-    <tr>
-        <td><a href="index.php?daftar=senaraipelajar1">DDT5B</a></td>
-        <td>Norul Huda Binti Abdul Razak</td>
-    </tr>
+    <?php
+    $sql = "SELECT * FROM pensyarah ORDER BY idpensyarah";
+    $result = $conn->query($sql);
+    echo $conn->error;
+    while ($row = $result->fetch_object()) {
+        ?>
+        <tr>
+            <td><a href="index.php?daftar=senaraipelajar1&idpensyarah=<?php echo $row->idpensyarah; ?>"><?php echo $row->kelas; ?></a></td>
+            <td><?php echo $row->namapensyarah; ?></td>
+        </tr>
+        <?php
+    }
+    ?>
 </table>
--- Sila klik nama kelas untuk melihat senarai pelajar--
+-- Sila klik nama kursus untuk melihat senarai pelajar yang mendaftar--
