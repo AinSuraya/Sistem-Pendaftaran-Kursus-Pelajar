@@ -1,11 +1,11 @@
-<h1>Senarai Pensyarah</h1>
+<h1>Senarai Penasihat Akademik</h1>
 
 <table border="0">
     <tr>
         <th>Bil</th>
         <th>Nama Pengguna</th>
         <th>Kelas</th>
-        <th>Nama Pensyarah</th>
+        <th>Nama Penasihat Akademik</th>
         <th>Jabatan</th>
         <th>Tindakan</th>
     </tr>

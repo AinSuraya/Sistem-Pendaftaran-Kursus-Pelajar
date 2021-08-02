@@ -20,8 +20,8 @@ if (!isset($_SESSION['admin'])) {
   <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR(PTSS)</font></center>
 </marquee>
 <ul>
-    <li><a href="index.php?daftar=senarai">Senarai Pensyarah</a></li>
-    <li><a href="index.php?daftar=daftarpensyarah">Daftar Pensyarah</a></li>
+    <li><a href="index.php?daftar=senarai">Senarai PA</a></li>
+    <li><a href="index.php?daftar=daftarpensyarah">Daftar PA</a></li>
     <li><a href="index.php?daftar=senaraikursus">Senarai Kursus</a></li>
     <li><a href="index.php?daftar=daftarkursus">Daftar Kursus</a></li>
     <li><a href="index.php?daftar=pelajar">Senarai Pelajar(Kelas)</a></li>

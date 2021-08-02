@@ -9,7 +9,7 @@ $password = $_POST['password'];
 if ($username == 'admin') {
     $sql = "SELECT * FROM admin";
     $row = $conn->query($sql)->fetch_object();
-    if (password_verify($password, $row->password)) {
+    if ($password == $row->password) {
         $_SESSION['admin'] = 'admin';
         header('location: admin/');
     } else {
@@ -31,7 +31,7 @@ if ($username == 'admin') {
     if ($num_rows == 1) {
         echo $conn->error;
         $stmt->fetch();
-        if (password_verify($password, $pswd)) {
+        if ($password == $row->password) {
             $_SESSION['idpensyarah'] = $idpensyarah;
             header('location: pensyarah/');
         } else {
@@ -53,7 +53,7 @@ if ($username == 'admin') {
         if ($num_rows == 1) {
             echo $conn->error;
             $stmt->fetch();
-            if (password_verify($password, $pswd)) {
+            if ($password == $row->password) {
                 $_SESSION['idpelajar'] = $idpelajar;
                 header('location: pelajar/');
             } else {

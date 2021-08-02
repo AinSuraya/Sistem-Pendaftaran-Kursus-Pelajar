@@ -1,6 +1,13 @@
+<?php
+    $idpelajar = $_GET['idpelajar'];
+    $sql = "SELECT * FROM pelajar WHERE idpelajar = $idpelajar";
+    $row = $conn->query($sql)->fetch_object();
+?>
 <h1>Senarai Kursus Yang Telah Didaftar</h1>
-AIN SURAYA BINTI MOHD RUZUKI <br>
-<br><table border="0">
+
+<p><?php echo $row->namapelajar;?></p><br>
+
+<table border="0">
     <tr>
         <th>Bil</th>
         <th>Kod Kursus</th>
@@ -9,7 +16,9 @@ AIN SURAYA BINTI MOHD RUZUKI <br>
     </tr>
     <?php
     $bil = 1;
-    $sql = "SELECT * FROM kursus ORDER BY idkursus";
+    $sql = "SELECT * FROM pensyarah, pelajar, daftar, kursus 
+    WHERE pelajar.idpensyarah = pensyarah.idpensyarah
+    AND pelajar.idpelajar = daftar.idpelajar AND daftar.idkursus = kursus.idkursus AND daftar.idpelajar = $idpelajar";
     $result = $conn->query($sql);
     echo $conn->error;
     while ($row = $result->fetch_object()) {

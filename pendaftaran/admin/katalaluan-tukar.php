@@ -15,8 +15,8 @@ if ($kata2 != $kata3) {
 } else {
     $sql = "SELECT * FROM admin";
     $row = $conn->query($sql)->fetch_object();
-    if (password_verify($kata1, $row->password)) {
-        $password = password_hash($kata2, PASSWORD_DEFAULT);
+    if ($password == $row->password) {
+        $password = $kata2;
         $sql = "UPDATE admin SET password = '$password'";
         $conn->query($sql);
         ?>

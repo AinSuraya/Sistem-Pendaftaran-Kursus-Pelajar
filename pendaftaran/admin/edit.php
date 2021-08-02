@@ -9,7 +9,7 @@ $stmt->bind_result($username, $namapensyarah, $jabatan, $kelas, $password);
 $stmt->fetch();
 $stmt->close();
 ?>
-<h1>Edit Pensyarah</h1>
+<h1>Edit Penasihat Akademik</h1>
 
 <form action="edit-simpan.php" method="post">
     <input type="hidden" name="idpensyarah" value="<?php echo $idpensyarah; ?>">
@@ -19,7 +19,7 @@ $stmt->close();
             <td><input type="text" value="<?php echo $username; ?>" readonly></td>
         </tr>
         <tr>
-            <td>Nama Pensyarah</td>
+            <td>Nama Penasihat Akademik</td>
             <td><input type="text" name="namapensyarah" value="<?php echo $namapensyarah; ?>"></td>
         </tr>
         <tr>

@@ -18,7 +18,7 @@ $row = $conn->query($sql)->fetch_object();
   <font face="times new roman" size="30" color="maroon"><center>SISTEM PENDAFTARAN KURSUS PELAJAR(PTSS)</font></center>
 </marquee>
 <ul>
-    <li><a href="index.php?daftar=senarai">Senarai Pelajar</a></li>
+    <li><a href="index.php?daftar=senarai">Pelajar</a></li>
     <li><a href="index.php?daftar=daftar">Daftar Pelajar</a></li>
     <li><a href="index.php?daftar=kursus">Senarai Kursus</a></li>
     <li><a href="index.php?daftar=pelajar">Senarai Pelajar</a></li>
@@ -26,7 +26,7 @@ $row = $conn->query($sql)->fetch_object();
     <li><a href="../logout.php">Log Keluar</a></li>
 </ul>
 
-<font><b>Pensyarah :</b></font>
+<font><b>Penasihat Akademik :</b></font>
 <font><?php echo $row->namapensyarah;?></font><br>
 <font><b>Kelas :</b></font>
 <font><?php echo $row->kelas;?></font><br>

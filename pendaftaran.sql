@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2021 at 01:32 PM
+-- Generation Time: Aug 02, 2021 at 10:35 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`password`) VALUES
-('$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6');
+('admin');
 
 -- --------------------------------------------------------
 
@@ -50,6 +50,38 @@ CREATE TABLE `daftar` (
   `idpelajar` int(11) NOT NULL,
   `idkursus` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `daftar`
+--
+
+INSERT INTO `daftar` (`iddaftar`, `idpelajar`, `idkursus`) VALUES
+(1, 1, 1),
+(2, 2, 1),
+(3, 5, 1),
+(4, 10, 1),
+(5, 11, 1),
+(6, 12, 1),
+(7, 14, 1),
+(8, 4, 6),
+(9, 6, 6),
+(10, 7, 6),
+(11, 8, 6),
+(12, 9, 6),
+(13, 13, 6),
+(14, 1, 6),
+(15, 2, 6),
+(16, 5, 6),
+(17, 10, 6),
+(18, 11, 6),
+(19, 12, 6),
+(20, 14, 6),
+(21, 4, 7),
+(22, 6, 7),
+(23, 7, 7),
+(24, 8, 7),
+(25, 9, 7),
+(26, 13, 7);
 
 -- --------------------------------------------------------
 
@@ -69,7 +101,16 @@ CREATE TABLE `kursus` (
 --
 
 INSERT INTO `kursus` (`idkursus`, `kodkursus`, `namakursus`, `jamkredit`) VALUES
-(1, 'DFP5013', 'Mobile Application Development', 3);
+(1, 'DFP5013', 'MOBILE APPLICATION DEVELOPMENT', 4),
+(3, 'DFP6033', 'SECURE MOBILE COMPUTING', 3),
+(4, 'DFN5023', 'NETWORK DESIGN', 3),
+(5, 'DFN4043', 'SWITCHING & ROUTING ESSENTIALS', 3),
+(6, 'DFT6014', 'INTEGRATED PROJECT', 4),
+(7, 'DFN6023', 'CONNECTION WAN', 3),
+(8, 'DFN6014', 'ADVANCED ROUTING', 4),
+(9, 'DFN6033', 'OPEN SOURCE SERVER ADMINISTRATION', 3),
+(10, 'DFW5013', 'ADVANCED WEB DEVELOPMENT', 3),
+(13, 'DFP5023', 'PYTHON', 2);
 
 -- --------------------------------------------------------
 
@@ -91,17 +132,16 @@ CREATE TABLE `pelajar` (
 --
 
 INSERT INTO `pelajar` (`idpelajar`, `idpensyarah`, `nomatrik`, `namapelajar`, `username`, `password`) VALUES
-(1, 1, '18DDT18F2004', 'Ain Suraya Binti Mohd Ruzuki', 'suraya', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
-(2, 2, '18DDT18F2013', 'Nursyuhana Binti Abdul Rashid', 'syuhana', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
-(3, 1, '18DDT18F2010', 'Nurul Emeyra Binti Bakari', 'nurulemeyra', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
-(4, 2, '18DDT18F2028', 'Umi Nafhirah Binti Abdul Munaim', 'nadhirah', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
-(5, 1, '18DDT18F2014', 'Leo Melvin S/O Raju', 'melvin', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
+(2, 2, '18DDT18F2013', 'Nursyuhana Binti Abdul Rashid', 'syuhana', 'hana'),
+(3, 1, '18DDT18F2010', 'Nurul Emeyra Binti Bakari', 'nurulemeyra', 'mira'),
+(4, 2, '18DDT18F2028', 'Umi Nadhirah Binti Abdul Munaim', 'nadhirah', 'umi'),
+(5, 1, '18DDT18F2014', 'Leo Melvin S/O Raju', 'melvin', 'leo'),
 (6, 2, '18DDT18F2017', 'Suzanna Ann A/P Daniees', 'suzanna', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
 (7, 1, '18DDT18F2023', 'Zaimie Nurazia Binti Zainol', 'mimie', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
 (8, 2, '18DDT18F2022', 'Chaviroad A/L Pram', 'chaviroad', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
 (9, 1, '18DDT18F2016', 'Adli Sidqi Bin Azhar', 'sidqi', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
-(10, 2, '18DDT18F2023', 'Mohd Raihazarul Irman Bin Mohd Ramli', 'zarul', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
-(11, 1, '18DDT18F2023', 'Nur Syafiqah Binti Saruji Affandi', 'syafiqah', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
+(10, 2, '18DDT18F2029', 'Mohd Raihazarul Irman Bin Mohd Ramli', 'zarul', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
+(11, 1, '18DDT18F2024', 'Nur Syafiqah Binti Saruji Affandi', 'syafiqah', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
 (12, 2, '18DDT18F2001', 'Ain\' Nur Najwa Binti Zainol', 'najwa', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
 (13, 1, '18DDT18F2008', 'Kamaleshwahrran A/L Naidu', 'kamal', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
 (14, 2, '18DDT18F2038', 'Thurkeswary A/P Marimuthu', 'thurkes', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6');
@@ -126,8 +166,10 @@ CREATE TABLE `pensyarah` (
 --
 
 INSERT INTO `pensyarah` (`idpensyarah`, `namapensyarah`, `jabatan`, `kelas`, `username`, `password`) VALUES
-(1, 'Mime Azrina Binti Jaafar', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT5A', 'mimeazrina', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
-(2, 'Norul Huda Binti Abdul Razak', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT5B', 'norulhuda', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6');
+(1, 'Mime Azrina Binti Jaafar', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT5A', 'mime azrina', 'pa1'),
+(2, 'Norul Huda Binti Abdul Razak', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT5B', 'norul huda', 'pa2'),
+(5, 'Azmiah Binti Aziz', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT6D', 'azmiah', 'pa3'),
+(8, 'Ali Binti Ahmad', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT6A', 'ali', 'pa4');
 
 --
 -- Indexes for dumped tables
@@ -171,25 +213,13 @@ ALTER TABLE `pensyarah`
 -- AUTO_INCREMENT for table `daftar`
 --
 ALTER TABLE `daftar`
-  MODIFY `iddaftar` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `kursus`
---
-ALTER TABLE `kursus`
-  MODIFY `idkursus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `pelajar`
---
-ALTER TABLE `pelajar`
-  MODIFY `idpelajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `iddaftar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `pensyarah`
 --
 ALTER TABLE `pensyarah`
-  MODIFY `idpensyarah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idpensyarah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

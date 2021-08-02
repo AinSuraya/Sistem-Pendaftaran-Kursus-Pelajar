@@ -13,14 +13,15 @@
         <th>Kelas</th>
         <th>No Pendaftaran</th>
         <th>Nama Pelajar</th>
-        <th>Pensyarah</th>
+        <th>Penasihat Akademik</th>
         <th>Jabatan</th>
+        <th>Sessi</th>
     </tr>
     <?php
     $bil = 1;
     $sql = "SELECT * FROM pensyarah, pelajar, daftar, kursus 
     WHERE pelajar.idpensyarah = pensyarah.idpensyarah
-    AND pelajar.idpelajar = daftar.idpelajar AND daftar.idkursus = kursus.idkursus";
+    AND pelajar.idpelajar = daftar.idpelajar AND daftar.idkursus = kursus.idkursus AND daftar.idkursus = $idkursus";
     $result = $conn->query($sql);
     echo $conn->error;
     while ($row = $result->fetch_object()) {
@@ -32,6 +33,7 @@
             <td><?php echo $row->namapelajar; ?></td>
             <td><?php echo $row->namapensyarah; ?></td>
             <td><?php echo $row->jabatan; ?></td>
+            <td></td>
         </tr>
         <?php
     }

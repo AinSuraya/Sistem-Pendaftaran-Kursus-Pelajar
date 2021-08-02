@@ -17,7 +17,7 @@
     $bil = 1;
     $sql = "SELECT * FROM pensyarah, pelajar, daftar, kursus 
     WHERE pelajar.idpensyarah = pensyarah.idpensyarah
-    AND pelajar.idpelajar = daftar.idpelajar AND daftar.idkursus = kursus.idkursus";
+    AND pelajar.idpelajar = daftar.idpelajar AND daftar.idkursus = kursus.idkursus AND daftar.idkursus = $idkursus";
     $result = $conn->query($sql);
     echo $conn->error;
     while ($row = $result->fetch_object()) {

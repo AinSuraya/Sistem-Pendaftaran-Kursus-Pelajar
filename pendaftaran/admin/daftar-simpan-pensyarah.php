@@ -1,11 +1,11 @@
 <?php
 require '../conn.php';
 
-$username = $_POST['username'];
 $namapensyarah = $_POST['namapensyarah'];
-$password = password_hash($username, PASSWORD_DEFAULT);
-$jabatan = $_POST['jabatan'];
+$username = $_POST['username'];
 $kelas = $_POST['kelas'];
+$jabatan = $_POST['jabatan'];
+$password = $_POST['password'];
 
 $sql = "INSERT INTO pensyarah VALUES (null, ?, ?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);

@@ -7,12 +7,16 @@
             <td><input type="text" name="username"></td>
         </tr>
         <tr>
-            <td>Nama Pelajar</td>
-            <td><input type="text" name="namapelajar"></td>
+            <td>Kata Laluan</td>
+            <td><input type="password" name="password"></td>
         </tr>
         <tr>
             <td>No Pendaftaran Pelajar</td>
             <td><input type="text" name="nomatrik"></td>
+        </tr>
+        <tr>
+            <td>Nama Pelajar</td>
+            <td><input type="text" name="namapelajar"></td>
         </tr>
         <tr>
             <td colspan="2" align="center">

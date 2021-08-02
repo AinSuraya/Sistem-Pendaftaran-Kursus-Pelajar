@@ -3,7 +3,7 @@
 <table border="0">
     <tr>
         <th>KELAS</th>
-        <th>PENSYARAH</th>
+        <th>PENASIHAT AKADEMIK</th>
     </tr>
     <?php
     $sql = "SELECT * FROM pensyarah ORDER BY idpensyarah";
