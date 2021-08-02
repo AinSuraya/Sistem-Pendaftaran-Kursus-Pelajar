@@ -11,7 +11,12 @@ if ($username == 'admin') {
     $row = $conn->query($sql)->fetch_object();
     if ($password == $row->password) {
         $_SESSION['admin'] = 'admin';
-        header('location: admin/');
+        ?>
+        <script>
+            alert('Berjaya log masuk!');
+            window.location = 'admin/';
+        </script>
+        <?php
     } else {
         ?>
         <script>
@@ -33,8 +38,13 @@ if ($username == 'admin') {
         $stmt->fetch();
         if ($password == $row->password) {
             $_SESSION['idpensyarah'] = $idpensyarah;
-            header('location: pensyarah/');
-        } else {
+            ?>
+            <script>
+                alert('Berjaya log masuk!');
+                window.location = 'pensyarah/';
+            </script>
+        <?php
+    } else {
             ?>
             <script>
                 alert('Maaf2, nama pengguna / kata laluan tidak sah!');
@@ -55,7 +65,12 @@ if ($username == 'admin') {
             $stmt->fetch();
             if ($password == $row->password) {
                 $_SESSION['idpelajar'] = $idpelajar;
-                header('location: pelajar/');
+                ?>
+                <script>
+                    alert('Berjaya log masuk!');
+                    window.location = 'pensyarah/';
+                </script>
+            <?php
             } else {
                 ?>
                 <script>
