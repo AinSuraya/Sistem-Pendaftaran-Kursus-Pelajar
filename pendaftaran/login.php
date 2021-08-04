@@ -36,7 +36,7 @@ if ($username == 'admin') {
     if ($num_rows == 1) {
         echo $conn->error;
         $stmt->fetch();
-        if ($password == $row->password) {
+        if ($password = $pswd) {
             $_SESSION['idpensyarah'] = $idpensyarah;
             ?>
             <script>
@@ -53,9 +53,9 @@ if ($username == 'admin') {
             <?php
         }
     } else {
-        $sql = "SELECT idpelajar, password FROM pelajar WHERE username = ?";
+        $sql = "SELECT idpelajar, password FROM pelajar WHERE nomatrik = ?";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param('s', $username);
+        $stmt->bind_param('s', $nomatrik);
         $stmt->execute();
         $stmt->store_result();
         $num_rows = $stmt->num_rows;
@@ -63,12 +63,12 @@ if ($username == 'admin') {
         if ($num_rows == 1) {
             echo $conn->error;
             $stmt->fetch();
-            if ($password == $row->password) {
+            if ($password = $pswd) {
                 $_SESSION['idpelajar'] = $idpelajar;
                 ?>
                 <script>
                     alert('Berjaya log masuk!');
-                    window.location = 'pensyarah/';
+                    window.location = 'pelajar/';
                 </script>
             <?php
             } else {

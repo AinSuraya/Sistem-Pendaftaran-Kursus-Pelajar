@@ -21,5 +21,10 @@ if ($conn->errno == 1062) { # jika duplicate pada field yang unique
     </script>
     <?php
 } else {
-    header('location: index.php?daftar=senarai');
+    ?>
+    <script>
+        alert('Berjaya mendaftar');
+        window.location = 'index.php?daftar=senarai';
+    </script>
+    <?php
 }

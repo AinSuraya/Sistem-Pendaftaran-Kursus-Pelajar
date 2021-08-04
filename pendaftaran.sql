@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 02, 2021 at 10:35 AM
+-- Generation Time: Aug 04, 2021 at 01:32 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -48,40 +48,41 @@ INSERT INTO `admin` (`password`) VALUES
 CREATE TABLE `daftar` (
   `iddaftar` int(11) NOT NULL,
   `idpelajar` int(11) NOT NULL,
-  `idkursus` int(11) NOT NULL
+  `idkursus` int(11) NOT NULL,
+  `sesi` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `daftar`
 --
 
-INSERT INTO `daftar` (`iddaftar`, `idpelajar`, `idkursus`) VALUES
-(1, 1, 1),
-(2, 2, 1),
-(3, 5, 1),
-(4, 10, 1),
-(5, 11, 1),
-(6, 12, 1),
-(7, 14, 1),
-(8, 4, 6),
-(9, 6, 6),
-(10, 7, 6),
-(11, 8, 6),
-(12, 9, 6),
-(13, 13, 6),
-(14, 1, 6),
-(15, 2, 6),
-(16, 5, 6),
-(17, 10, 6),
-(18, 11, 6),
-(19, 12, 6),
-(20, 14, 6),
-(21, 4, 7),
-(22, 6, 7),
-(23, 7, 7),
-(24, 8, 7),
-(25, 9, 7),
-(26, 13, 7);
+INSERT INTO `daftar` (`iddaftar`, `idpelajar`, `idkursus`, `sesi`) VALUES
+(1, 1, 1, 'Disember 2020'),
+(2, 2, 1, 'Disember 2020'),
+(3, 5, 1, 'Disember 2020'),
+(4, 10, 1, 'Disember 2020'),
+(5, 11, 1, 'Disember 2020'),
+(6, 12, 1, 'Disember 2020'),
+(7, 14, 1, 'Disember 2020'),
+(8, 4, 6, 'Disember 2020'),
+(9, 6, 6, 'Disember 2020'),
+(10, 7, 6, 'Disember 2020'),
+(11, 8, 6, 'Disember 2020'),
+(12, 9, 6, 'Disember 2020'),
+(13, 13, 6, 'Disember 2020'),
+(14, 1, 6, 'Disember 2020'),
+(15, 2, 6, 'Disember 2020'),
+(16, 5, 6, 'Disember 2020'),
+(17, 10, 6, 'Disember 2020'),
+(18, 11, 6, 'Disember 2020'),
+(19, 12, 6, 'Disember 2020'),
+(20, 14, 6, 'Disember 2020'),
+(21, 4, 7, 'Disember 2020'),
+(22, 6, 7, 'Disember 2020'),
+(23, 7, 7, 'Disember 2020'),
+(24, 8, 7, 'Disember 2020'),
+(25, 9, 7, 'Disember 2020'),
+(26, 13, 7, '');
 
 -- --------------------------------------------------------
 
@@ -101,7 +102,7 @@ CREATE TABLE `kursus` (
 --
 
 INSERT INTO `kursus` (`idkursus`, `kodkursus`, `namakursus`, `jamkredit`) VALUES
-(1, 'DFP5013', 'MOBILE APPLICATION DEVELOPMENT', 4),
+(1, 'DFP5013', 'MOBILE APPLICATION DEVELOPMENT', 3),
 (3, 'DFP6033', 'SECURE MOBILE COMPUTING', 3),
 (4, 'DFN5023', 'NETWORK DESIGN', 3),
 (5, 'DFN4043', 'SWITCHING & ROUTING ESSENTIALS', 3),
@@ -132,8 +133,8 @@ CREATE TABLE `pelajar` (
 --
 
 INSERT INTO `pelajar` (`idpelajar`, `idpensyarah`, `nomatrik`, `namapelajar`, `username`, `password`) VALUES
-(2, 2, '18DDT18F2013', 'Nursyuhana Binti Abdul Rashid', 'syuhana', 'hana'),
-(3, 1, '18DDT18F2010', 'Nurul Emeyra Binti Bakari', 'nurulemeyra', 'mira'),
+(2, 2, '18DDT18F2013', 'Nursyuhana Binti Abdul Rashid', 'syuhana', '2020'),
+(3, 1, '18DDT18F2010', 'Nurul Emeyra Binti Bakari', 'nurulemeyra', 'nurulemeyra'),
 (4, 2, '18DDT18F2028', 'Umi Nadhirah Binti Abdul Munaim', 'nadhirah', 'umi'),
 (5, 1, '18DDT18F2014', 'Leo Melvin S/O Raju', 'melvin', 'leo'),
 (6, 2, '18DDT18F2017', 'Suzanna Ann A/P Daniees', 'suzanna', '$2y$10$Hf/NF2cb5TAGAaAEhwCTdebHvLgwsGV51TiOAMsPklkqrdCpd7ux6'),
@@ -166,10 +167,9 @@ CREATE TABLE `pensyarah` (
 --
 
 INSERT INTO `pensyarah` (`idpensyarah`, `namapensyarah`, `jabatan`, `kelas`, `username`, `password`) VALUES
-(1, 'Mime Azrina Binti Jaafar', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT5A', 'mime azrina', 'pa1'),
+(1, 'Mime Azrina Binti Jaafar', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT5A', 'mime azrina', '123'),
 (2, 'Norul Huda Binti Abdul Razak', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT5B', 'norul huda', 'pa2'),
-(5, 'Azmiah Binti Aziz', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT6D', 'azmiah', 'pa3'),
-(8, 'Ali Binti Ahmad', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT6A', 'ali', 'pa4');
+(5, 'Azmiah Binti Aziz', 'Jabatan Teknologi Maklumat Dan Komunikasi', 'DDT6D', 'azmiah', 'azmiah');
 
 --
 -- Indexes for dumped tables
@@ -185,25 +185,29 @@ ALTER TABLE `admin`
 -- Indexes for table `daftar`
 --
 ALTER TABLE `daftar`
-  ADD PRIMARY KEY (`iddaftar`);
+  ADD PRIMARY KEY (`iddaftar`),
+  ADD UNIQUE KEY `iddaftar` (`iddaftar`);
 
 --
 -- Indexes for table `kursus`
 --
 ALTER TABLE `kursus`
-  ADD PRIMARY KEY (`idkursus`);
+  ADD PRIMARY KEY (`idkursus`),
+  ADD UNIQUE KEY `idkursus` (`idkursus`);
 
 --
 -- Indexes for table `pelajar`
 --
 ALTER TABLE `pelajar`
-  ADD PRIMARY KEY (`idpelajar`);
+  ADD PRIMARY KEY (`idpelajar`),
+  ADD UNIQUE KEY `idpelajar` (`idpelajar`);
 
 --
 -- Indexes for table `pensyarah`
 --
 ALTER TABLE `pensyarah`
-  ADD PRIMARY KEY (`idpensyarah`);
+  ADD PRIMARY KEY (`idpensyarah`),
+  ADD UNIQUE KEY `idpensyarah` (`idpensyarah`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -216,10 +220,16 @@ ALTER TABLE `daftar`
   MODIFY `iddaftar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
+-- AUTO_INCREMENT for table `pelajar`
+--
+ALTER TABLE `pelajar`
+  MODIFY `idpelajar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
 -- AUTO_INCREMENT for table `pensyarah`
 --
 ALTER TABLE `pensyarah`
-  MODIFY `idpensyarah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idpensyarah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

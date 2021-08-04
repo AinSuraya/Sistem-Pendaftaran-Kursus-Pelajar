@@ -31,6 +31,10 @@ $stmt->close();
             <td><input type="text" name="kelas" value="<?php echo $kelas; ?>"></td>
         </tr>
         <tr>
+            <td>Kata laluan</td>
+            <td><input type="text" name="password" value="<?php echo $password; ?>"></td>
+        </tr>
+        <tr>
             <td colspan="2" align="center">
             <button type="submit">SIMPAN</button>
             </td>

@@ -11,5 +11,8 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param('sssi', $namapensyarah, $jabatan, $kelas, $idpensyarah);
 $stmt->execute();
 $stmt->close();
-
-header('location: index.php?daftar=senarai');
+?>
+<script>
+    alert('Berjaya edit');
+    window.location = 'index.php?daftar=senarai';
+</script>

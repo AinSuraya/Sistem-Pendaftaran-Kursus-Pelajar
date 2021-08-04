@@ -16,8 +16,8 @@ if ($kata2 != $kata3) {
     $idpensyarah = $_SESSION['idpensyarah'];
     $sql = "SELECT * FROM pensyarah WHERE idpensyarah = $idpensyarah";
     $row = $conn->query($sql)->fetch_object();
-    if (password_verify($kata1, $row->password)) {
-        $password = password_hash($kata2, PASSWORD_DEFAULT);
+    if ($password = $kata1) {
+        $password = $kata2;
         $sql = "UPDATE pensyarah SET password = '$password' WHERE idpensyarah = $idpensyarah";
         $conn->query($sql);
         ?>

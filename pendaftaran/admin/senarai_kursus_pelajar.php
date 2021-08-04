@@ -33,6 +33,7 @@
             <td><?php echo $row->namapelajar; ?></td>
             <td><?php echo $row->namapensyarah; ?></td>
             <td><?php echo $row->jabatan; ?></td>
+            <td><?php echo $row->sesi; ?></td>
             <td></td>
         </tr>
         <?php

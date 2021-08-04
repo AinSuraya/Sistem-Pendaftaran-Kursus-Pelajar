@@ -11,5 +11,8 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param('ssii', $kodkursus, $namakursus, $jamkredit, $idkursus);
 $stmt->execute();
 $stmt->close();
-
-header('location: index.php?daftar=senaraikursus');
+?>
+<script>
+    alert('Berjaya edit');
+    window.location = 'index.php?daftar=senaraikursus';
+</script>

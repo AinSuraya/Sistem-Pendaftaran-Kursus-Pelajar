@@ -2,14 +2,15 @@
 require '../conn.php';
 
 $idpensyarah = $_GET['idpensyarah'];
-$sql = "SELECT * FROM pensyarah WHERE idpensyarah = ?";
+$sql = "SELECT username FROM pensyarah WHERE idpensyarah = ?";
 $stmt = $conn->prepare($sql);
 echo $conn->error;
 $stmt->bind_param('i', $idpensyarah);
 $stmt->execute();
 $stmt->store_result();
 $stmt->bind_result($username);
-$password = password_hash($username, PASSWORD_DEFAULT);
+$stmt->fetch();
+$password = $username;
 $stmt->close();
 
 $sql = "UPDATE pensyarah SET password = ? WHERE idpensyarah = ?";
