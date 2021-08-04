@@ -26,6 +26,7 @@ if ($username == 'admin') {
         <?php
     }
 } else {
+    #login pelajar
     $sql = "SELECT idpensyarah, password FROM pensyarah WHERE username = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param('s', $username);
