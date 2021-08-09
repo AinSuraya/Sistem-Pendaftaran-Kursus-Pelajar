@@ -7,7 +7,7 @@
 
 <p><?php echo $row->namakursus;?></p><br>
 
-<table border="0">
+<table border="1">
     <tr>
         <th>Bil</th>
         <th>Kelas</th>
@@ -34,7 +34,6 @@
             <td><?php echo $row->namapensyarah; ?></td>
             <td><?php echo $row->jabatan; ?></td>
             <td><?php echo $row->sesi; ?></td>
-            <td></td>
         </tr>
         <?php
     }

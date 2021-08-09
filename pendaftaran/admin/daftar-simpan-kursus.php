@@ -19,5 +19,10 @@ if ($conn->errno == 1062) { # jika duplicate pada field yang unique
     </script>
     <?php
 } else {
-    header('location: index.php?daftar=senaraikursus');
+    ?>
+    <script>
+        alert('Berjaya daftar');
+        window.location = 'index.php?daftar=senaraikursus';
+    </script>
+    <?php
 }

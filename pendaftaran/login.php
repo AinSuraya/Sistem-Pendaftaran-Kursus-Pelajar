@@ -26,7 +26,6 @@ if ($username == 'admin') {
         <?php
     }
 } else {
-    #login pelajar
     $sql = "SELECT idpensyarah, password FROM pensyarah WHERE username = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param('s', $username);
@@ -54,9 +53,10 @@ if ($username == 'admin') {
             <?php
         }
     } else {
+        #login pelajar
         $sql = "SELECT idpelajar, password FROM pelajar WHERE nomatrik = ?";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param('s', $nomatrik);
+        $stmt->bind_param('s', $username);
         $stmt->execute();
         $stmt->store_result();
         $num_rows = $stmt->num_rows;

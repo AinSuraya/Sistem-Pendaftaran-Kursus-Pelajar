@@ -17,5 +17,9 @@ $sql = "UPDATE pelajar SET password = ? WHERE idpelajar = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param('si', $password, $idpelajar);
 $stmt->execute();
+?>
 
-header('location: index.php?daftar=senarai');
+<script>
+    alert('Berjaya reset kata laluan pelajar.');
+    window.location = 'location: index.php?daftar=senarai';
+</script>

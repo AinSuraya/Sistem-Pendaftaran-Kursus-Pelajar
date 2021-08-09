@@ -1,9 +1,9 @@
 <?php
 require '../conn.php';
 
-$namapensyarah = $_POST['namapensyarah'];
 $username = $_POST['username'];
 $kelas = $_POST['kelas'];
+$namapensyarah = $_POST['namapensyarah'];
 $jabatan = $_POST['jabatan'];
 $password = $_POST['password'];
 
@@ -23,7 +23,7 @@ if ($conn->errno == 1062) { # jika duplicate pada field yang unique
 } else {
     ?>
     <script>
-        alert('Berjaya mendaftar');
+        alert('Berjaya daftar');
         window.location = 'index.php?daftar=senarai';
     </script>
     <?php

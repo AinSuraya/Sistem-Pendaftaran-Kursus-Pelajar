@@ -1,3 +1,6 @@
+<?php
+require '../conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,61 +15,26 @@
         <th>Bil</th>
         <th>No Pendaftaran</th>
         <th>Nama Pelajar</th>
-        <th>Jam Kredit Telah Ambil</th>
-        <th>Jam Kredit Belum Ambil</th>
     </tr>
+    <?php
+        $bil = 1;
+        $idpensyarah = $_GET['idpensyarah'];
+        $sql = "SELECT * FROM pelajar WHERE idpensyarah = $idpensyarah";
+        $result = $conn->query($sql);
+        echo $conn->error;
+        while ($row = $result->fetch_object()) {
+    ?>
     <tr>
-        <td>1.</td>
-        <td>18DDT18F2004</td>
-        <td>Ain Suraya Binti Mohd Ruzuki</td>
-        <td>88</td>
-        <td>19</td>
+        <td><?php echo $bil++; ?></td>
+        <td><?php echo $row->nomatrik; ?></td>
+        <td><?php echo $row->namapelajar; ?></td>
     </tr>
-    <tr>
-        <td>2.</td>
-        <td>18DDT18F2010</td>
-        <td>Nurul Emeyra Binti Bakari</td>
-        <td>52</td>
-        <td>55</td>
-    </tr>
-    <tr>
-        <td>3.</td>
-        <td>18DDT18F2014</td>
-        <td>Leo Melvin S/O Raju</td>
-        <td>88</td>
-        <td>19</td>
-    </tr>
-    <tr>
-        <td>4.</td>
-        <td>18DDT18F2023</td>
-        <td>Zaimie Nurazia Binti Zainol</td>
-        <td>88</td>
-        <td>19</td>
-    </tr>
-    <tr>
-        <td>5.</td>
-        <td>18DDT18F2016</td>
-        <td>Adli Sidqi Bin Azhar</td>
-        <td>75</td>
-        <td>32</td>
-    </tr>
-        <td>6.</td>
-        <td>18DDT18F2024</td>
-        <td>Nur Syafiqah Binti Saruji Affandi</td>
-        <td>88</td>
-        <td>19</td>
-    </tr>
-    <tr>
-        <td>7.</td>
-        <td>18DDT18F2008</td>
-        <td>Kamaleshwahrran A/L Naidu</td>
-        <td>88</td>
-        <td>19</td>
-    </tr>
+    <?php
+        }
+    ?>
 </table>
-
 <p>-- klik butang untuk mencetak halaman semasa --</p>
-<button onclick="window.print()"><img src="print.png" width="60px" height="10%"></button>
+<img src="print.png" width="50px" height="10%" onclick="window.print()">
 </center>
 </body>
 </html>

@@ -7,7 +7,7 @@
 
 <p> <?php echo $row->kelas;?> | <?php echo $row->namapensyarah;?> | <?php echo $row->jabatan;?></p><br>
 
-<table border="0">
+<table border="1">
     <tr>
         <th>Bil</th>
         <th>No Pendaftaran</th>
@@ -22,7 +22,7 @@
     while ($row = $result->fetch_object()) {
         ?>
         <tr>
-            <td><?php echo $bil++; ?></td>
+            <td><center><?php echo $bil++; ?></center></td>
             <td><?php echo $row->nomatrik; ?></td>
             <td><?php echo $row->namapelajar; ?></td>
         </tr>

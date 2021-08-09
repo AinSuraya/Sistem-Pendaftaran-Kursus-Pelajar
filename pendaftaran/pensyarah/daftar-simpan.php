@@ -3,7 +3,7 @@ require '../conn.php';
 
 $username = $_POST['username'];
 $namapelajar = $_POST['namapelajar'];
-$password = password_hash($username, PASSWORD_DEFAULT);
+$password = $_POST['password'];
 $nomatrik = $_POST['nomatrik'];
 
 $sql = "INSERT INTO pelajar VALUES (null, null, ?, ?, ?, ?)";
@@ -20,5 +20,9 @@ if ($conn->errno == 1062) { # jika duplicate pada field yang unique
     </script>
     <?php
 } else {
-    header('location: index.php?daftar=senarai');
+    ?>
+    <script>
+        alert('Berjaya daftar.');
+        window.location = 'index.php?daftar=senarai';
+    </script>
 }

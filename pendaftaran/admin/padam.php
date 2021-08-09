@@ -7,5 +7,9 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param('i', $idpensyarah);
 $stmt->execute();
 $stmt->close();
+?>
 
-header('location: index.php?daftar=senarai');
+<script>
+    alert('Berjaya padam PA tersebut.');
+    window.location = 'index.php?daftar=senarai';
+</script>

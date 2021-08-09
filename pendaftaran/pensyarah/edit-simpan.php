@@ -10,5 +10,9 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param('ssi', $nomatrik, $namapelajar, $idpelajar);
 $stmt->execute();
 $stmt->close();
+?>
 
-header('location: index.php?daftar=senarai');
+<script>
+    alert('Berjaya edit');
+    window.location = 'index.php?daftar=senarai';
+</script>

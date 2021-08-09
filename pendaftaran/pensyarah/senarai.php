@@ -1,6 +1,6 @@
 <h1>Senarai Pelajar</h1>
 
-<table border="0">
+<table border="1">
     <tr>
         <th>Bil</th>
         <th>No Pendaftaran</th>

@@ -1,6 +1,6 @@
 <h1>Senarai Pelajar Mengikut Kursus</h1>
 
-<table border="0">
+<table border="1">
     <tr>
         <th>Bil</th>
         <th>Kod Kursus</th>
@@ -15,10 +15,10 @@
     while ($row = $result->fetch_object()) {
         ?>
         <tr>
-            <td><?php echo $bil++; ?></td>
+            <td><center><?php echo $bil++; ?></center></td>
             <td><?php echo $row->kodkursus; ?></td>
             <td><a href="index.php?daftar=senarai_kursus_pelajar&idkursus=<?php echo $row->idkursus; ?>"><?php echo $row->namakursus; ?></a></td>
-            <td><?php echo $row->jamkredit; ?></td>
+            <td><center><?php echo $row->jamkredit; ?></center></td>
         </tr>
         <?php
     }

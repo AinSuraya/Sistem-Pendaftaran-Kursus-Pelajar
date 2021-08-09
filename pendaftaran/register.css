@@ -11,6 +11,9 @@ form{
     padding: 10px 15px;
     margin: 8px 0;
 }
+table {
+	border-collapse: collapse;
+}
 input[type=number],input[type=text], input[type=password] {
     width: 90%;
 	padding: 5px 20px;
