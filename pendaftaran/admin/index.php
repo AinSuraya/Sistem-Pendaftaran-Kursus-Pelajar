@@ -27,7 +27,7 @@ if (!isset($_SESSION['admin'])) {
     <li><a href="index.php?daftar=pelajar">Senarai Pelajar(Kelas)</a></li>
     <li><a href="index.php?daftar=kursus">Senarai Pelajar(Kursus)</a></li>
     <li><a href="index.php?daftar=katalaluan">Kata Laluan</a></li>
-    <li><a href="../logout.php">Log Keluar</a></li>
+    <li><a href="../logout.php" onclick="return confirm()">Log Keluar</a></li>
 </ul>
 
 <font><b>Admin</b></font><br>

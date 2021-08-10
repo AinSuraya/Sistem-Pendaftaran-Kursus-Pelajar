@@ -19,6 +19,10 @@ $stmt->close();
             <td><input type="text" value="<?php echo $username; ?>" readonly></td>
         </tr>
         <tr>
+            <td>Kata laluan</td>
+            <td><input type="text" name="password" value="<?php echo $password; ?>" readonly></td>
+        </tr>
+        <tr>
             <td>Nama Penasihat Akademik</td>
             <td><input type="text" name="namapensyarah" value="<?php echo $namapensyarah; ?>"></td>
         </tr>
@@ -29,10 +33,6 @@ $stmt->close();
         <tr>
             <td>Kelas</td>
             <td><input type="text" name="kelas" value="<?php echo $kelas; ?>"></td>
-        </tr>
-        <tr>
-            <td>Kata laluan</td>
-            <td><input type="text" name="password" value="<?php echo $password; ?>"></td>
         </tr>
         <tr>
             <td colspan="2" align="center">

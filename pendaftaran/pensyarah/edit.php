@@ -19,16 +19,16 @@ $stmt->close();
             <td><input type="text" value="<?php echo $username; ?>" readonly></td>
         </tr>
         <tr>
+            <td>Kata laluan</td>
+            <td><input type="text" name="password" value="<?php echo $password; ?>" readonly></td>
+        </tr>
+        <tr>
             <td>Nama Pelajar</td>
             <td><input type="text" name="namapelajar" value="<?php echo $namapelajar; ?>"></td>
         </tr>
         <tr>
             <td>No Pendaftaran Pelajar</td>
             <td><input type="text" name="nomatrik" value="<?php echo $nomatrik; ?>"></td>
-        </tr>
-        <tr>
-            <td>Kata laluan</td>
-            <td><input type="text" name="password" value="<?php echo $password; ?>"></td>
         </tr>
         <tr>
             <td colspan="2" align="center">

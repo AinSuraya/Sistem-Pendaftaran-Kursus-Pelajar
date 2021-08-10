@@ -21,7 +21,7 @@ $row = $conn->query($sql)->fetch_object();
     <li><a href="index.php?daftar=kursus&idpelajar=<?php echo $row->idpelajar; ?>">Senarai Kursus</a></li>
     <li><a href="index.php?daftar=daftar">Daftar Kursus</a></li>
     <li><a href="index.php?daftar=katalaluan">Kata Laluan</a></li>
-    <li><a href="../logout.php">Log Keluar</a></li>
+    <li><a href="../logout.php" onclick="return confirm()">Log Keluar</a></li>
 </ul>
 <font><b>Pelajar :</b></font>
 <font><?php echo $row->namapelajar;?></font><br>

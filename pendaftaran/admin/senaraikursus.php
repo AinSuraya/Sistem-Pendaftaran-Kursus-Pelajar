@@ -1,6 +1,6 @@
 <h1>Senarai Kursus</h1>
 
-<table border="0">
+<table border="1">
     <tr>
         <th>Bil</th>
         <th>Kod Kursus</th>
@@ -19,7 +19,7 @@
             <td><?php echo $bil++; ?></td>
             <td><?php echo $row->kodkursus; ?></td>
             <td><?php echo $row->namakursus; ?></td>
-            <td><?php echo $row->jamkredit; ?></td>
+            <td><center><?php echo $row->jamkredit; ?></center></td>
             <td>
                 <a href="index.php?daftar=editkursus&idkursus=<?php echo $row->idkursus; ?>">Edit</a>
                 |

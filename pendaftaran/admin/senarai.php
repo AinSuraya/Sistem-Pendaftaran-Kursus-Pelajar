@@ -1,6 +1,6 @@
 <h1>Senarai Penasihat Akademik</h1>
 
-<table border="0">
+<table border="1">
     <tr>
         <th>Bil</th>
         <th>Nama Pengguna</th>
