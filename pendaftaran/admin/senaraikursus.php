@@ -23,7 +23,7 @@
             <td>
                 <a href="index.php?daftar=editkursus&idkursus=<?php echo $row->idkursus; ?>">Edit</a>
                 |
-                <a href="padam-kursus.php?idkursus=<?php echo $row->idkursus; ?>">Padam</a>
+                <a href="padam-kursus.php?idkursus=<?php echo $row->idkursus; ?>" onclick="return confirm()">Padam</a>
             </td>
         </tr>
         <?php

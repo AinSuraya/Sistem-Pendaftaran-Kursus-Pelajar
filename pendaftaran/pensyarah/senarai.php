@@ -24,7 +24,7 @@
                 |
                 <a href="index.php?daftar=edit&idpelajar=<?php echo $row->idpelajar; ?>">Edit</a>
                 |
-                <a href="padam.php?idpelajar=<?php echo $row->idpelajar; ?>">Padam</a>
+                <a href="padam.php?idpelajar=<?php echo $row->idpelajar; ?>" onclick="return confirm()">Padam</a>
             </td>
         </tr>
         <?php

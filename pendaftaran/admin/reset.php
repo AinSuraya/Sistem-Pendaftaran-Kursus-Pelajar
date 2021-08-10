@@ -21,5 +21,5 @@ $stmt->execute();
 
 <script>
     alert('Berjaya reset kata laluan pensyarah.');
-    window.location = 'location: index.php?daftar=senarai';
+    window.location = 'index.php?daftar=senarai';
 </script>

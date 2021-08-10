@@ -1,11 +1,11 @@
 <?php
 $idpelajar = $_GET['idpelajar'];
-$sql = "SELECT nomatrik, namapelajar, username, password FROM pelajar WHERE idpelajar = ?";
+$sql = "SELECT username, namapelajar, nomatrik, password FROM pelajar WHERE idpelajar = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param('i', $idpelajar);
 $stmt->execute();
 $stmt->store_result();
-$stmt->bind_result($nomatrik, $namapelajar, $username, $password);
+$stmt->bind_result($username, $namapelajar, $nomatrik, $password);
 $stmt->fetch();
 $stmt->close();
 ?>
@@ -25,6 +25,10 @@ $stmt->close();
         <tr>
             <td>No Pendaftaran Pelajar</td>
             <td><input type="text" name="nomatrik" value="<?php echo $nomatrik; ?>"></td>
+        </tr>
+        <tr>
+            <td>Kata laluan</td>
+            <td><input type="text" name="password" value="<?php echo $password; ?>"></td>
         </tr>
         <tr>
             <td colspan="2" align="center">

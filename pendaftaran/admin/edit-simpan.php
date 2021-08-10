@@ -8,7 +8,7 @@ $kelas = $_POST['kelas'];
 
 $sql = "UPDATE pensyarah SET namapensyarah=?, jabatan=?, kelas=? WHERE idpensyarah=?";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param('sssi', $idpensyarah, $namapensyarah, $jabatan, $kelas);
+$stmt->bind_param('sssi', $namapensyarah, $jabatan, $kelas, $idpensyarah);
 $stmt->execute();
 $stmt->close();
 ?>

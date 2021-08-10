@@ -12,6 +12,7 @@
         <th>Bil</th>
         <th>No Pendaftaran</th>
         <th>Nama Pelajar</th>
+        <th>Sesi</th>
     </tr>
     <?php
     $bil = 1;
@@ -26,6 +27,7 @@
             <td><center><?php echo $bil++; ?></center></td>
             <td><?php echo $row->nomatrik; ?></td>
             <td><?php echo $row->namapelajar; ?></td>
+            <td><?php echo $row->sesi; ?></td>
         </tr>
         <?php
     }

@@ -2,8 +2,8 @@
 require '../conn.php';
 
 $idpelajar = $_POST['idpelajar'];
-$namapelajar = $_POST['namapelajar'];
 $nomatrik = $_POST['nomatrik'];
+$namapelajar = $_POST['namapelajar'];
 
 $sql = "UPDATE pelajar SET nomatrik=?, namapelajar=? WHERE idpelajar=?";
 $stmt = $conn->prepare($sql);
