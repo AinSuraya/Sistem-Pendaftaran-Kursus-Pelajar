@@ -36,7 +36,7 @@ if ($username == 'admin') {
     if ($num_rows == 1) {
         echo $conn->error;
         $stmt->fetch();
-        if ($password = $pswd) {
+        if ($password == $pswd) {
             $_SESSION['idpensyarah'] = $idpensyarah;
             ?>
             <script>
@@ -64,7 +64,7 @@ if ($username == 'admin') {
         if ($num_rows == 1) {
             echo $conn->error;
             $stmt->fetch();
-            if ($password = $pswd) {
+            if ($password == $pswd) {
                 $_SESSION['idpelajar'] = $idpelajar;
                 ?>
                 <script>
