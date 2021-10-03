@@ -2,15 +2,15 @@
 require '../conn.php';
 
 $idpelajar = $_GET['idpelajar'];
-$sql = "SELECT username FROM pelajar WHERE idpelajar = ?";
+$sql = "SELECT nomatrik FROM pelajar WHERE idpelajar = ?";
 $stmt = $conn->prepare($sql);
 echo $conn->error;
 $stmt->bind_param('i', $idpelajar);
 $stmt->execute();
 $stmt->store_result();
-$stmt->bind_result($username);
+$stmt->bind_result($nomatrik);
 $stmt->fetch();
-$password = $username;
+$password = $nomatrik;
 $stmt->close();
 
 $sql = "UPDATE pelajar SET password = ? WHERE idpelajar = ?";

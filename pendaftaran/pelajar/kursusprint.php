@@ -1,12 +1,21 @@
-<h1>Senarai Kursus</h1>
-
-<table border="1">
+<?php
+require '../conn.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senarai Pelajar</title>
+</head>
+<body>
+<center><table border="1">
     <tr>
         <th>Bil</th>
         <th>Kod Kursus</th>
         <th>Nama Kursus</th>
         <th>Jam Kredit</th>
-        <th>Tindakan</th>
     </tr>
     <?php
     $bil = 1;
@@ -23,13 +32,13 @@
             <td><?php echo $row->kodkursus; ?></td>
             <td><?php echo $row->namakursus; ?></td>
             <td><center><?php echo $row->jamkredit; ?></center></td>
-            <td>
-            <center><a href="padam.php?iddaftar=<?php echo $row->iddaftar;?>" onclick="return confirm()">Padam</a></center>
-            </td>
         </tr>
         <?php
     }
     ?>
 </table>
-<br>
-<a href="kursusprint.php?idpelajar=<?php echo $idpelajar; ?>">PRINT</a>
+<p>-- klik butang untuk mencetak halaman semasa --</p>
+<img src="print.png" width="50px" height="10%" onclick="window.print()">
+</center>
+</body>
+</html>

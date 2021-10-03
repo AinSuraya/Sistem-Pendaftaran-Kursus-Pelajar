@@ -15,7 +15,7 @@
         <th>Nama Pelajar</th>
         <th>Penasihat Akademik</th>
         <th>Jabatan</th>
-        <th>Sessi</th>
+        <th>Sesi</th>
     </tr>
     <?php
     $bil = 1;
@@ -27,12 +27,12 @@
     while ($row = $result->fetch_object()) {
         ?>
         <tr>
-            <td><?php echo $bil++; ?></td>
+            <td><center><?php echo $bil++; ?></center></td>
             <td><?php echo $row->kelas; ?></td>
             <td><?php echo $row->nomatrik; ?></td>
             <td><?php echo $row->namapelajar; ?></td>
             <td><?php echo $row->namapensyarah; ?></td>
-            <td><?php echo $row->jabatan; ?></td>
+            <td><center><?php echo $row->jabatan; ?></center></td>
             <td><?php echo $row->sesi; ?></td>
         </tr>
         <?php

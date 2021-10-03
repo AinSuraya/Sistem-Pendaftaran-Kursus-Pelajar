@@ -17,11 +17,11 @@
     while ($row = $result->fetch_object()) {
         ?>
         <tr>
-            <td><?php echo $bil++; ?></td>
+            <td><center><?php echo $bil++; ?></center></td>
             <td><?php echo $row->username; ?></td>
             <td><?php echo $row->kelas; ?></td>
             <td><?php echo $row->namapensyarah; ?></td>
-            <td><?php echo $row->jabatan; ?></td>
+            <td><center><?php echo $row->jabatan; ?></center></td>
             <td>
                 <a href="reset.php?idpensyarah=<?php echo $row->idpensyarah; ?>">Reset</a>
                 |

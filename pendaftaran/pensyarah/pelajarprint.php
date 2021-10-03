@@ -10,7 +10,7 @@ require '../conn.php';
     <title>Senarai Pelajar</title>
 </head>
 <body>
-<center><table border="0">
+<center><table border="1">
     <tr>
         <th>Bil</th>
         <th>No Pendaftaran</th>
@@ -25,7 +25,7 @@ require '../conn.php';
         while ($row = $result->fetch_object()) {
     ?>
     <tr>
-        <td><?php echo $bil++; ?></td>
+        <td><center><?php echo $bil++; ?></center></td>
         <td><?php echo $row->nomatrik; ?></td>
         <td><?php echo $row->namapelajar; ?></td>
     </tr>
